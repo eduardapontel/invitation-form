@@ -1,0 +1,47 @@
+#brand {
+    width: 400px;
+    height: 728px;
+    flex-shrink: 0;
+    background: linear-gradient(
+            180deg,
+            rgba(33, 37, 38, 0.8) 0%,
+            rgba(33, 37, 38, 0.65) 20%,
+            rgba(33, 37, 38, 0.3) 40.5%,
+            rgba(33, 37, 38, 0.1) 100%
+        ),
+        url(../assets/Background.png) lightgray 50% / cover no-repeat;
+    border-radius: 12px;
+}
+
+#brand .title {
+    display: flex;
+    width: 336px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px 32px 0 32px;
+}
+
+#brand #logo {
+    width: 45.851px;
+    height: 48px;
+}
+
+#brand .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+#brand h1 {
+    font: var(--logo);
+    color: #ff598b;
+}
+
+#brand p {
+    font: var(--body-sm);
+    font-weight: 100;
+    color: #f9f9f9;
+}
