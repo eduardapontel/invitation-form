@@ -1,0 +1,245 @@
+#custom-form {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 28px 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+#color-div {
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#color-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+    & > .color-container {
+        position: relative;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+        background: var(--shape-button);
+        box-sizing: border-box;
+
+        &:has(input[type='radio']:checked) {
+            outline: 2px solid var(--light-blue);
+            background: var(--shape-button);
+            transition: outline 0.3s ease-out, background 0.3s ease-out;
+        }
+
+        .color {
+            height: 28px;
+            flex: 1 0 0;
+            border-radius: 50%;
+        }
+    }
+}
+
+#light-blue {
+    background: var(--light-blue);
+}
+
+#purple {
+    background: var(--purple);
+}
+
+#lilac {
+    background-color: var(--lilac);
+}
+
+#pink {
+    background: var(--pink);
+}
+
+#peach {
+    background: var(--peach);
+}
+
+#red {
+    background: var(--red);
+}
+
+#orange {
+    background: var(--orange);
+}
+
+#yellow {
+    background: var(--yellow);
+}
+
+#lime {
+    background: var(--lime);
+}
+
+#green {
+    background: var(--green);
+}
+
+#cyan {
+    background: var(--cyan);
+}
+
+#theme-div {
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#theme-container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.theme-item {
+    position: relative;
+    display: flex;
+    width: 134px;
+    padding: 4px 4px 8px 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    background: var(--shape-button);
+
+    &:has(input[type='radio']:checked) {
+        outline: 2px solid var(--light-blue);
+        background: var(--shape-button);
+        transition: outline 0.3s ease-out, background 0.3s ease-out;
+    }
+
+    & > img {
+        height: 64px;
+        align-self: stretch;
+        border-radius: 4px;
+    }
+
+    & > label {
+        align-self: stretch;
+        color: var(--text-heading);
+        text-align: center;
+        font: var(--body-sm);
+    }
+}
+
+#switch-toggle {
+    display: flex;
+    width: 176px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    & > div {
+        display: flex;
+        height: 48px;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        position: relative;
+    }
+}
+
+#toggle-container {
+    position: relative;
+    width: 64px;
+    height: 32px;
+}
+
+#toggle-checkbox:checked + #toggle-svg {
+    background-image: url(../../assets/icons/toggle-checked.svg);
+}
+
+#toggle-svg {
+    width: 64px;
+    height: 32px;
+    background-image: url(../../assets/icons/toggle.svg);
+}
+
+#switch-toggle > div > label {
+    font: var(--body-sm);
+
+    &::after {
+        content: 'Dark';
+    }
+}
+
+#toggle-svg-container:has(#toggle-checkbox:checked) + label::after {
+    content: 'Light';
+}
+
+#file-input-container {
+    display: flex;
+    width: 368px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    & > #input-div {
+        position: relative;
+        display: flex;
+        height: 48px;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+    }
+
+    & button {
+        position: relative;
+        all: unset;
+        display: flex;
+        height: 40px;
+        padding: 4px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        background: var(--shape-button);
+
+        & > span {
+            color: var(--text-heading);
+            font: var(--body-sm);
+        }
+    }
+
+    & span {
+        flex: 1 0 0;
+        color: var(--input-placeholder);
+        font: var(--body-md, 16px);
+    }
+}
+
+#file-input-container:has(input[type='file']:valid) span#file-name:after {
+    content: '';
+}
+
+#file-input-container span#file-name:after {
+    content: 'There is no file selected';
+}
+
+#file-input:valid ~ .error-message {
+    display: none;
+}
+
+#file-input:invalid ~ .error-message {
+    display: block;
+}

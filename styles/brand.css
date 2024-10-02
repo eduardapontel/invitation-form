@@ -1,7 +1,4 @@
 #brand {
-    width: 400px;
-    height: 728px;
-    flex-shrink: 0;
     background: linear-gradient(
             180deg,
             rgba(33, 37, 38, 0.8) 0%,
@@ -13,7 +10,7 @@
     border-radius: 12px;
 }
 
-#brand .title {
+#brand-title {
     display: flex;
     width: 336px;
     flex-direction: column;
@@ -37,11 +34,11 @@
 
 #brand h1 {
     font: var(--logo);
-    color: #ff598b;
+    color: var(--peach);
 }
 
 #brand p {
     font: var(--body-sm);
     font-weight: 100;
-    color: #f9f9f9;
+    color: var(--text-heading);
 }

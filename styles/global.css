@@ -5,21 +5,21 @@
 }
 
 :root {
-    --brand-light: #59b2ff;
-    --brand-mid: #3487cf;
-    --brand-dark: #1d6fb6;
+    --light-blue: #59b2ff;
+    --mid-blue: #3487cf;
+    --dark-blue: #1d6fb6;
 
-    --purple: #b259ff;
-    --fuschia: #ff59f9;
-    --pink: #ff598b;
+    --lilac: #b259ff;
+    --pink: #ff59f9;
+    --peach: #ff598b;
     --orange: #ff8b59;
     --yellow: #ffcd59;
     --lime: #e1ff59;
     --green: #59ff91;
     --cyan: #59fff9;
-    --navy: #6a59ff;
+    --purple: #6a59ff;
 
-    --danger: #ff5959;
+    --red: #ff5959;
 
     --input-base: #1c1f21;
     --input-stroke: #363b40;
@@ -47,12 +47,13 @@
     --body-xs: 500 0.75rem var(--open-sans);
 }
 
-body {
-    display: inline-flex;
-    padding: 20px 20px 0px 20px;
-    justify-content: center;
-    align-items: flex-start;
+#app {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 26% 1fr;
+    overflow: hidden;
     gap: 20px;
-    border-radius: 20px;
-    background: #131516;
+    background: var(--shape-background);
+    padding: 20px;
 }
+
