@@ -11,7 +11,7 @@ This project includes a form where users can:
 - Choose the event type (in-person or online).
 - Enter the event location (link or address).
 - Choose the main color of the invitation.
-- Choose the event theme.
+- Choose the event theme. 
 - Upload a cover photo.
 - Enter contact details, including name, email, and phone number.
 - Agree to the terms and conditions.
