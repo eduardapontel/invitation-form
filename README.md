@@ -15,7 +15,7 @@ This project includes a form where users can:
 - Upload a cover photo.
 - Enter contact details, including name, email, and phone number.
 - Agree to the terms and conditions.
-
+ 
 <br>
 
 ## Layout ✏️
