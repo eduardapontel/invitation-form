@@ -22,7 +22,7 @@ This project includes a form where users can:
 
 The layout for this project was created by Rocketseat using Figma. You can view the layout file and its components by visiting the following link: [Figma Layout](https://www.figma.com/community/file/1389649528880849780/formulario-de-convite).
 
-The layout showcases the structure, color scheme, and visual design of the recipe page, providing a clear reference for the development of the project.
+The layout showcases the structure, color scheme, and visual design of the webpage, providing a clear reference for the development of the project.
 
 <br>
 
