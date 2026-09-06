@@ -1,10 +1,10 @@
 # Digital Invitation Form 🎉
 
-Welcome to the digital invitation form! This project features a form for creating digital invitations for events, designed to collect information about the event, including event details, customization, and contact information.
+This project features a form for creating digital invitations for events, designed to collect information about the event, including event details, customization, and contact information.
 
 <br>
 
-## Project Overview 🎊
+## Features ✨
 This project includes a form where users can:
 
 - Enter event details such as title, date, and time.
@@ -26,22 +26,19 @@ The layout showcases the structure, color scheme, and visual design of the webpa
 
 <br>
 
-## HTML Structure 🏗️
-
-The HTML structure consists of:
-
-- A `<div>` displaying the logo and a welcoming message.
-- A `<form>` containing fields for user inputs.
-
-<br>
-
 ## CSS Styling 🎨
-The form's styling is handled using CSS with the following files:
 
-- styles/global.css - Contains global styles and resets.
-- styles/layout.css - Manages the layout and positioning.
-- styles/form.css - Styles specific to the form elements.
-- styles/fields/index.css - Includes styles for input fields, drop areas, radio buttons, and checkboxes.
+The project uses a modular CSS structure:
+
+- `global.css` — Global variables, colors, typography, and layout.
+- `brand.css` — Branding/sidebar styles.
+- `invite/` — Styles for the invitation form, organized into:
+  - `global.css` — Layout and shared form components.
+  - `about-section.css` — Event information fields.
+  - `custom-section.css` — Themes, colors, and appearance.
+  - `contact-details.css` — Contact section layout.
+  - `footer.css` — Terms, checkboxes, and submit button.
+- `index.css` — Main stylesheet that imports all CSS modules.
 
 <br>
 
@@ -66,4 +63,5 @@ Feel free to contribute to this project by submitting issues or pull requests. Y
 
 ## Notes 📌
 
-This form is static and does not include functionality for form submission or backend integration.
+This is a static front-end project created for demonstration purposes. The form cannot be submitted and does not include backend integration or data persistence.
+
