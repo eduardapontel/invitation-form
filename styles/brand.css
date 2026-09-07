@@ -6,7 +6,7 @@
             rgba(33, 37, 38, 0.3) 40.5%,
             rgba(33, 37, 38, 0.1) 100%
         ),
-        url(../assets/Background.png) lightgray 50% / cover no-repeat;
+        url(../assets/background.png) lightgray 50% / cover no-repeat;
     border-radius: 12px;
 }
 
