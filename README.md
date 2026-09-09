@@ -49,7 +49,9 @@ The project uses a modular CSS structure:
 **Or** follow the steps below to run it locally:
 
 - Clone the repository:
-   ```git clone https://github.com/eduardapontel/invitation-form.git```
+   ```bash
+    git clone https://github.com/eduardapontel/invitation-form.git
+   ```
 
 - Open `index.html` in your browser.
 
