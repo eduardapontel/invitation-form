@@ -2,7 +2,7 @@
 
 This project features a form for creating digital invitations for events, designed to collect information about the event, including event details, customization, and contact information.
 
-<br>
+<br> 
 
 ## Features ✨
 This project includes a form where users can:
